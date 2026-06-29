@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hotel booking confirmation page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* Color */
+        --color-clifford: #da373d;
+        --color-neutral-900: #2c2721;
+        --color-neutral-800: #3e3428;
+        --color-neutral-700: #594b3b;
+        --color-neutral-600: #7a6a57;
+        --color-neutral-400: #e3ddd3;
+        --color-neutral-200: #f1ede9;
+        --color-neutral-100: #fbf6ef;
+        --color-neutral-50: #fdfbf7;
+        --color-neutral-0: #ffffff;
+        --color-sun-500: #edb73b;
+        --color-sun-300: #f5d88a;
+        --color-sun-200: #ffde7a;
+        --color-sun-50: #fff4db;
+        --color-terracotta-700: #9f3e1d;
+        --color-terracotta-600: #b6421b;
+        --color-terracotta-500: #c25a2e;
+        --color-terracotta-400: #e0793e;
+        --color-blue-500: #586ac6;
+        --color-rose-500: #bf4a71;
+        /* Font */
+        --font-fraunces: "Fraunces", serif;
+        --font-dm-sans: "DM Sans", sans-serif;
+        --font-dm-mono: "DM Mono", monospace;
+      }
+
+      @utility preset-1 {
+        @apply font-fraunces font-normal text-[2.5rem] leading-[120%] tracking-[-0.5px];
+      }
+
+      @utility preset-1-italic {
+        @apply font-fraunces italic text-[2.5rem] leading-[120%] tracking-[-0.5px];
+      }
+
+      @utility preset-2 {
+        @apply font-fraunces font-normal text-[2rem] leading-[120%] tracking-[-0.25px];
+      }
+
+      @utility preset-3 {
+        @apply font-fraunces font-normal text-2xl leading-[140%] tracking-[-0.2px];
+      }
+
+      @utility preset-4 {
+        @apply font-fraunces font-normal text-xl leading-[140%] tracking-[-0.1px];
+      }
+
+      @utility preset-4-italic {
+        @apply font-fraunces italic text-xl leading-[140%] tracking-[-0.1px];
+      }
+
+      @utility preset-5 {
+        @apply font-fraunces font-normal text-sm leading-[140%] tracking-normal;
+      }
+
+      @utility preset-5-medium {
+        @apply font-dm-sans font-medium text-sm leading-[120%] tracking-normal;
+      }
+
+      @utility preset-5-semibold {
+        @apply font-dm-sans font-semibold text-sm leading-[120%] tracking-[0.3px];
+      }
+
+      @utility preset-6 {
+        @apply font-dm-mono font-medium text-sm leading-[140%] tracking-[2px];
+      }
+
+      @utility preset-7 {
+        @apply font-dm-sans font-normal text-xs leading-[120%] tracking-[0.4px];
+      }
+
+      @utility preset-8 {
+        @apply font-dm-mono font-normal text-sm leading-[140%] tracking-[2px];
+      }
+
+      @utility preset-9 {
+        @apply font-dm-mono font-normal text-sm leading-[140%] tracking-normal;
+      }
+
+      @utility preset-10 {
+        @apply font-dm-mono font-normal text-[0.625rem] leading-[140%] tracking-[1px];
+      }
+
+      @utility preset-11 {
+        @apply font-fraunces font-medium text-[0.625rem] leading-[140%] tracking-[1px];
+      }
+
+      @utility btn-primary {
+        @apply cursor-pointer py-2.5 px-4 bg-neutral-900 rounded-full text-sun-50 hover:bg-neutral-800 focus:outline-2 focus:outline-offset-[3px] focus:outline-terracotta-600;
+      }
+
+      @utility btn-secundary {
+        @apply cursor-pointer py-2.5 px-4 bg-transparent border border-neutral-400 rounded-full text-neutral-900 hover:bg-neutral-200 focus:outline-2 focus:outline-offset-[3px] focus:outline-terracotta-600;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-neutral-100">
+    <div>
+      <header>
+        <nav
+          class="p-4 flex justify-between items-center border-b border-neutral-400"
+        >
+          <img src="assets/images/logo.svg" alt="Maison Soleil Logo" />
+          <button
+            class="p-1.5 cursor-pointer border border-neutral-400 rounded-[4px]"
+          >
+            <img src="assets/images/icon-menu.svg" alt="Open menu icon" />
+          </button>
+        </nav>
+      </header>
+      <main class="px-4 pb-10 mt-5 flex flex-col gap-12 items-center">
+        <section class="flex flex-col gap-4">
+          <div>
+            <p class="preset-8 text-neutral-600 mb-1">Booking · Confirmed</p>
+            <p class="preset-1 text-neutral-9000">
+              Bienvenue,
+              <span class="preset-1-italic text-terracotta-600">Lucia.</span>
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <button class="w-full btn-secundary preset-5-semibold">
+              Print receipt
+            </button>
+            <button class="w-full btn-primary preset-5-semibold">
+              Add to calendar
+            </button>
+          </div>
+        </section>
+
+        <section></section>
+      </main>
+    </div>
+  </body>
+</html>
