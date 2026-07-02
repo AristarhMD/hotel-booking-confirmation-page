@@ -109,7 +109,7 @@
 }
 
 @utility mobile-nav {
-  @apply p-1.5 cursor-pointer border border-neutral-400 rounded-sm;
+  @apply p-1.5 cursor-pointer border border-neutral-400 rounded-sm focus:outline-offset-[3px] focus:outline-2 focus:outline-terracotta-600 active:outline-offset-[3px] active:outline-2 active:outline-terracotta-600;
 }
 
 @utility nav {
@@ -125,7 +125,7 @@
 }
 
 @utility deskto-nav-btn {
-  @apply cursor-pointer px-3 py-2.5 rounded-lg flex gap-2 items-center w-full hover:bg-neutral-0 hover:shadow-nav-btn;
+  @apply cursor-pointer px-3 py-2.5 rounded-lg flex gap-2 items-center w-full hover:bg-neutral-0 hover:shadow-nav-btn active:bg-neutral-0 active:shadow-nav-btn focus:outline-offset-[3px] focus:outline-2 focus:outline-terracotta-600;
 }
 
 @utility welcom-gradient {
