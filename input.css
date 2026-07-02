@@ -108,6 +108,22 @@
   @apply cursor-pointer py-2.5 px-4 bg-transparent border border-neutral-400 rounded-full text-neutral-900 hover:bg-neutral-200 focus:outline-2 focus:outline-offset-[3px] focus:outline-terracotta-600;
 }
 
+@utility mobile-nav {
+  @apply p-1.5 cursor-pointer border border-neutral-400 rounded-sm;
+}
+
+@utility nav {
+  @apply transition xl:transition-none duration-400 ease-in;
+}
+
+@utility nav-content {
+  @apply transition-[width] xl:transition-none xl:w-full duration-500 ease-in p-4 md:px-6 xl:p-0 w-0 max-w-96 h-full bg-neutral-100 ring-1 xl:ring-0 ring-inset ring-neutral-400 flex flex-col overflow-auto;
+}
+
+@utility nav-content-open {
+  @apply w-[85%];
+}
+
 @utility deskto-nav-btn {
   @apply cursor-pointer px-3 py-2.5 rounded-lg flex gap-2 items-center w-full hover:bg-neutral-0 hover:shadow-nav-btn;
 }
@@ -118,4 +134,8 @@
 
 @utility nav-weather-sun {
   @apply content-[''] absolute z-0 -right-[7%] -top-1/3 bg-[url('assets/images/icon-weather.svg')] bg-no-repeat bg-contain size-20;
+}
+
+@utility open-nav {
+  @apply translate-x-0;
 }
